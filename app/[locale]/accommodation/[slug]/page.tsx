@@ -1,10 +1,11 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { getBookingLink } from "@/config/site";
-import { getRoomBySlug, rooms } from "@/data/rooms";
+import { rooms } from "@/data/rooms";
+import { getCmsContent } from "@/lib/cms";
 import { locales } from "@/lib/i18n";
 import { getI18n, resolveLocale } from "@/lib/page";
 import { buildPageMetadata } from "@/lib/seo";
@@ -24,19 +25,19 @@ export async function generateMetadata({
   params: Promise<RoomDetailParams>;
 }): Promise<Metadata> {
   const { locale, slug } = await params;
+  const resolvedLocale = await resolveLocale(Promise.resolve({ locale }));
+  const { t } = await getI18n(resolvedLocale);
+  const cms = await getCmsContent(resolvedLocale, t);
 
-  const room = getRoomBySlug(slug);
+  const room = cms.rooms.find((item) => item.slug === slug);
   if (!room) {
     return {};
   }
 
-  const resolvedLocale = await resolveLocale(Promise.resolve({ locale }));
-  const { t } = await getI18n(resolvedLocale);
-
   return buildPageMetadata({
     locale: resolvedLocale,
-    title: t(room.titleKey),
-    description: t(room.shortDescriptionKey),
+    title: room.title,
+    description: room.shortDescription,
     path: `/accommodation/${room.slug}`,
   });
 }
@@ -49,8 +50,9 @@ export default async function AccommodationDetailPage({ params }: { params: Prom
     })),
   );
   const { t } = await getI18n(locale);
+  const cms = await getCmsContent(locale, t);
 
-  const room = getRoomBySlug(slug);
+  const room = cms.rooms.find((item) => item.slug === slug);
 
   if (!room) {
     notFound();
@@ -68,21 +70,21 @@ export default async function AccommodationDetailPage({ params }: { params: Prom
         <div className="grid gap-6 lg:grid-cols-[1.2fr_0.8fr]">
           <article className="glass-card overflow-hidden rounded-2xl">
             <div className="relative h-72 w-full md:h-96">
-              <Image src={room.images[0]} alt={t(room.titleKey)} fill priority className="object-cover" sizes="(max-width: 1024px) 100vw, 60vw" />
+              <Image src={room.images[0]} alt={room.title} fill priority className="object-cover" sizes="(max-width: 1024px) 100vw, 60vw" />
             </div>
 
             <div className="grid gap-3 p-4 md:grid-cols-2">
               {room.images.slice(1).map((image) => (
                 <div key={image} className="relative h-36 overflow-hidden rounded-xl">
-                  <Image src={image} alt={t(room.titleKey)} fill className="object-cover" sizes="(max-width: 1024px) 100vw, 30vw" />
+                  <Image src={image} alt={room.title} fill className="object-cover" sizes="(max-width: 1024px) 100vw, 30vw" />
                 </div>
               ))}
             </div>
           </article>
 
           <aside className="glass-card rounded-2xl p-6">
-            <h1 className="text-4xl text-brand-paper">{t(room.titleKey)}</h1>
-            <p className="mt-3 text-brand-muted">{t(room.descriptionKey)}</p>
+            <h1 className="text-4xl text-brand-paper">{room.title}</h1>
+            <p className="mt-3 text-brand-muted">{room.description}</p>
 
             <h2 className="mt-6 text-xl text-brand-paper">{t("accommodation.detail.specs")}</h2>
             <ul className="mt-3 space-y-2 text-sm text-brand-muted">
@@ -105,7 +107,7 @@ export default async function AccommodationDetailPage({ params }: { params: Prom
 
             <ul className="mt-4 space-y-1 text-sm text-brand-muted">
               {room.features.map((feature) => (
-                <li key={feature}>• {t(feature)}</li>
+                <li key={feature}>• {feature}</li>
               ))}
             </ul>
 

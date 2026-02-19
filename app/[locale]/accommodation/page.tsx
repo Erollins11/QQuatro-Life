@@ -1,9 +1,9 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 
 import AccommodationFilterGrid from "@/app/components/AccommodationFilterGrid";
 import SectionIntro from "@/app/components/SectionIntro";
 import { getBookingLink } from "@/config/site";
-import { rooms } from "@/data/rooms";
+import { getCmsContent } from "@/lib/cms";
 import { getI18n, resolveLocale } from "@/lib/page";
 import { buildPageMetadata } from "@/lib/seo";
 
@@ -22,14 +22,15 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function AccommodationPage({ params }: { params: Promise<{ locale: string }> }) {
   const locale = await resolveLocale(params);
   const { t } = await getI18n(locale);
+  const cms = await getCmsContent(locale, t);
 
   const bookingLink = getBookingLink(locale);
 
-  const roomModels = rooms.map((room) => ({
+  const roomModels = cms.rooms.map((room) => ({
     slug: room.slug,
-    title: t(room.titleKey),
-    shortDescription: t(room.shortDescriptionKey),
-    features: room.features.map((feature) => t(feature)),
+    title: room.title,
+    shortDescription: room.shortDescription,
+    features: room.features,
     image: room.images[0],
     area: room.area,
     capacity: room.capacity,

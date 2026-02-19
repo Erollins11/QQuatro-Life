@@ -1,9 +1,10 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import Image from "next/image";
 
 import ContactForm from "@/app/components/ContactForm";
 import SectionIntro from "@/app/components/SectionIntro";
 import { getWhatsAppLink, siteConfig } from "@/config/site";
+import { media } from "@/data/media";
 import { getI18n, resolveLocale } from "@/lib/page";
 import { buildPageMetadata } from "@/lib/seo";
 
@@ -63,7 +64,7 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
 
           <article className="glass-card overflow-hidden rounded-2xl">
             <div className="relative h-72 w-full">
-              <Image src="/placeholders/map.svg" alt={t("contact.mapPlaceholder")} fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" />
+              <Image src={media.homeHero} alt={t("contact.mapPlaceholder")} fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" />
             </div>
             <div className="p-4 text-sm text-brand-muted">{t("contact.mapPlaceholder")}</div>
           </article>

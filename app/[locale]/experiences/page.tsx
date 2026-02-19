@@ -1,15 +1,16 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import Image from "next/image";
 
 import SectionIntro from "@/app/components/SectionIntro";
+import { media } from "@/data/media";
 import { getI18n, resolveLocale } from "@/lib/page";
 import { buildPageMetadata } from "@/lib/seo";
 
 const experienceBlocks = [
-  { key: "beachPool", image: "/placeholders/gallery-beach-1.svg" },
-  { key: "waterSports", image: "/placeholders/gallery-beach-2.svg" },
-  { key: "yacht", image: "/placeholders/tour.svg" },
-  { key: "sports", image: "/placeholders/event.svg" },
+  { key: "beachPool", image: media.experiences.beachPool },
+  { key: "waterSports", image: media.experiences.waterSports },
+  { key: "yacht", image: media.experiences.yacht },
+  { key: "sports", image: media.experiences.sports },
 ] as const;
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {

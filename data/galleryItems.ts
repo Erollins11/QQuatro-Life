@@ -1,4 +1,5 @@
-﻿import type { GalleryItem } from "@/data/types";
+import { media } from "@/data/media";
+import type { GalleryItem } from "@/data/types";
 
 export const galleryItems: GalleryItem[] = [
   {
@@ -7,7 +8,7 @@ export const galleryItems: GalleryItem[] = [
     shortDescriptionKey: "gallery.items.lobbyArrival.shortDescription",
     category: "hotel",
     features: ["features.architecture", "features.concierge", "features.signatureScent"],
-    images: ["/placeholders/gallery-hotel-1.svg"],
+    images: [media.homeHero],
   },
   {
     slug: "deluxe-room-view",
@@ -15,7 +16,7 @@ export const galleryItems: GalleryItem[] = [
     shortDescriptionKey: "gallery.items.deluxeRoomView.shortDescription",
     category: "rooms",
     features: ["features.seaView", "features.privateTerrace", "features.linenQuality"],
-    images: ["/placeholders/gallery-room-1.svg"],
+    images: [media.rooms.deluxe],
   },
   {
     slug: "chef-table",
@@ -23,7 +24,7 @@ export const galleryItems: GalleryItem[] = [
     shortDescriptionKey: "gallery.items.chefTable.shortDescription",
     category: "dining",
     features: ["features.tastingMenu", "features.localProduce", "features.openKitchen"],
-    images: ["/placeholders/gallery-dining-1.svg"],
+    images: [media.dining.aura],
   },
   {
     slug: "sunset-pier",
@@ -31,7 +32,7 @@ export const galleryItems: GalleryItem[] = [
     shortDescriptionKey: "gallery.items.sunsetPier.shortDescription",
     category: "beach",
     features: ["features.privateBeach", "features.sunsetLounge", "features.cabanaService"],
-    images: ["/placeholders/gallery-beach-1.svg"],
+    images: [media.gallery.pier],
   },
   {
     slug: "spa-ritual",
@@ -39,7 +40,7 @@ export const galleryItems: GalleryItem[] = [
     shortDescriptionKey: "gallery.items.spaRitual.shortDescription",
     category: "spa",
     features: ["features.signatureRitual", "features.hammam", "features.relaxArea"],
-    images: ["/placeholders/gallery-spa-1.svg"],
+    images: [media.wellness.spa],
   },
   {
     slug: "pool-suite",
@@ -47,7 +48,7 @@ export const galleryItems: GalleryItem[] = [
     shortDescriptionKey: "gallery.items.poolSuite.shortDescription",
     category: "rooms",
     features: ["features.privatePool", "features.poolDeck", "features.morningLight"],
-    images: ["/placeholders/gallery-room-2.svg"],
+    images: [media.rooms.lagoonPool],
   },
   {
     slug: "beach-club",
@@ -55,7 +56,7 @@ export const galleryItems: GalleryItem[] = [
     shortDescriptionKey: "gallery.items.beachClub.shortDescription",
     category: "beach",
     features: ["features.liveDJ", "features.dayPass", "features.signatureCocktails"],
-    images: ["/placeholders/gallery-beach-2.svg"],
+    images: [media.experiences.beachPool],
   },
   {
     slug: "wellness-lounge",
@@ -63,6 +64,6 @@ export const galleryItems: GalleryItem[] = [
     shortDescriptionKey: "gallery.items.wellnessLounge.shortDescription",
     category: "spa",
     features: ["features.relaxArea", "features.herbalTea", "features.silentZone"],
-    images: ["/placeholders/gallery-spa-2.svg"],
+    images: [media.wellness.hammam],
   },
 ];

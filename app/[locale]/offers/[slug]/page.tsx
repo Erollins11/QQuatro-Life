@@ -1,10 +1,11 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { getBookingLink } from "@/config/site";
-import { getOfferBySlug, offers } from "@/data/offers";
+import { offers } from "@/data/offers";
+import { getCmsContent } from "@/lib/cms";
 import { locales } from "@/lib/i18n";
 import { getI18n, resolveLocale } from "@/lib/page";
 import { buildPageMetadata } from "@/lib/seo";
@@ -20,19 +21,19 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: { params: Promise<OfferParams> }): Promise<Metadata> {
   const { locale, slug } = await params;
-  const offer = getOfferBySlug(slug);
+  const resolvedLocale = await resolveLocale(Promise.resolve({ locale }));
+  const { t } = await getI18n(resolvedLocale);
+  const cms = await getCmsContent(resolvedLocale, t);
 
+  const offer = cms.offers.find((item) => item.slug === slug);
   if (!offer) {
     return {};
   }
 
-  const resolvedLocale = await resolveLocale(Promise.resolve({ locale }));
-  const { t } = await getI18n(resolvedLocale);
-
   return buildPageMetadata({
     locale: resolvedLocale,
-    title: t(offer.titleKey),
-    description: t(offer.shortDescriptionKey),
+    title: offer.title,
+    description: offer.shortDescription,
     path: `/offers/${offer.slug}`,
   });
 }
@@ -41,8 +42,9 @@ export default async function OfferDetailPage({ params }: { params: Promise<Offe
   const { slug } = await params;
   const locale = await resolveLocale(params.then((value) => ({ locale: value.locale })));
   const { t } = await getI18n(locale);
+  const cms = await getCmsContent(locale, t);
 
-  const offer = getOfferBySlug(slug);
+  const offer = cms.offers.find((item) => item.slug === slug);
   if (!offer) {
     notFound();
   }
@@ -58,13 +60,13 @@ export default async function OfferDetailPage({ params }: { params: Promise<Offe
 
         <article className="glass-card overflow-hidden rounded-2xl">
           <div className="relative h-72 w-full">
-            <Image src={offer.images[0]} alt={t(offer.titleKey)} fill className="object-cover" priority sizes="100vw" />
+            <Image src={offer.images[0]} alt={offer.title} fill className="object-cover" priority sizes="100vw" />
           </div>
 
           <div className="grid gap-6 p-6 lg:grid-cols-[1.1fr_0.9fr]">
             <div>
-              <h1 className="text-4xl text-brand-paper">{t(offer.titleKey)}</h1>
-              <p className="mt-3 text-brand-muted">{t(offer.descriptionKey)}</p>
+              <h1 className="text-4xl text-brand-paper">{offer.title}</h1>
+              <p className="mt-3 text-brand-muted">{offer.description}</p>
               <p className="mt-4 text-xs text-brand-muted">
                 {t("offers.validUntil")}: {offer.validUntil}
               </p>
@@ -73,7 +75,7 @@ export default async function OfferDetailPage({ params }: { params: Promise<Offe
             <aside>
               <ul className="space-y-2 text-sm text-brand-muted">
                 {offer.features.map((feature) => (
-                  <li key={feature}>• {t(feature)}</li>
+                  <li key={feature}>• {feature}</li>
                 ))}
               </ul>
               <p className="mt-5 text-xs text-brand-muted">{t("offers.detail.terms")}</p>

@@ -1,8 +1,9 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import Image from "next/image";
 
 import EventRequestForm from "@/app/components/EventRequestForm";
 import SectionIntro from "@/app/components/SectionIntro";
+import { media } from "@/data/media";
 import { getI18n, resolveLocale } from "@/lib/page";
 import { buildPageMetadata } from "@/lib/seo";
 
@@ -30,7 +31,7 @@ export default async function EventsPage({ params }: { params: Promise<{ locale:
         <div className="grid gap-5 lg:grid-cols-2">
           <article className="glass-card overflow-hidden rounded-2xl">
             <div className="relative h-56 w-full">
-              <Image src="/placeholders/event.svg" alt={t("events.weddings.title")} fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" />
+              <Image src={media.events.wedding} alt={t("events.weddings.title")} fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" />
             </div>
             <div className="p-5">
               <h2 className="text-3xl text-brand-paper">{t("events.weddings.title")}</h2>
@@ -40,7 +41,7 @@ export default async function EventsPage({ params }: { params: Promise<{ locale:
 
           <article className="glass-card overflow-hidden rounded-2xl">
             <div className="relative h-56 w-full">
-              <Image src="/placeholders/room-lounge.svg" alt={t("events.meetings.title")} fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" />
+              <Image src={media.events.meeting} alt={t("events.meetings.title")} fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" />
             </div>
             <div className="p-5">
               <h2 className="text-3xl text-brand-paper">{t("events.meetings.title")}</h2>

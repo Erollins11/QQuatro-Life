@@ -1,6 +1,7 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 
 import { siteConfig } from "@/config/site";
+import { media } from "@/data/media";
 import type { Locale } from "@/lib/i18n";
 import { getLocalizedPath } from "@/lib/i18n";
 
@@ -40,7 +41,7 @@ export function buildPageMetadata({
       siteName: siteConfig.hotelName,
       images: [
         {
-          url: absoluteUrl("/placeholders/hero-coast.svg"),
+          url: absoluteUrl(media.homeHero),
           width: 1600,
           height: 1000,
           alt: `${siteConfig.hotelName} Bodrum`,
@@ -51,7 +52,7 @@ export function buildPageMetadata({
       card: "summary_large_image",
       title,
       description,
-      images: [absoluteUrl("/placeholders/hero-coast.svg")],
+      images: [absoluteUrl(media.homeHero)],
     },
   };
 }
@@ -67,7 +68,7 @@ export function buildHotelJsonLd(locale: Locale) {
     description: siteConfig.description,
     telephone: siteConfig.phone,
     email: siteConfig.email,
-    image: absoluteUrl("/placeholders/hero-coast.svg"),
+    image: absoluteUrl(media.homeHero),
     address: {
       "@type": "PostalAddress",
       streetAddress: siteConfig.address,
@@ -89,7 +90,7 @@ export function buildOrganizationJsonLd() {
     "@type": "Organization",
     name: siteConfig.hotelName,
     url: absoluteUrl("/"),
-    logo: absoluteUrl("/placeholders/hero-coast.svg"),
+    logo: absoluteUrl(media.homeHero),
     contactPoint: {
       "@type": "ContactPoint",
       telephone: siteConfig.phone,

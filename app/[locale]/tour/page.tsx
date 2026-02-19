@@ -1,7 +1,8 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import Image from "next/image";
 
 import SectionIntro from "@/app/components/SectionIntro";
+import { media } from "@/data/media";
 import { getI18n, resolveLocale } from "@/lib/page";
 import { buildPageMetadata } from "@/lib/seo";
 
@@ -28,7 +29,7 @@ export default async function TourPage({ params }: { params: Promise<{ locale: s
 
         <article className="glass-card overflow-hidden rounded-2xl">
           <div className="relative h-[420px] w-full">
-            <Image src="/placeholders/tour.svg" alt={t("tour.title")} fill className="object-cover" sizes="100vw" />
+            <Image src={media.experiences.yacht} alt={t("tour.title")} fill className="object-cover" sizes="100vw" />
           </div>
           <div className="p-6 text-sm text-brand-muted">{t("tour.placeholder")}</div>
         </article>

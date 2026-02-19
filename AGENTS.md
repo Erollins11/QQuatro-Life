@@ -6,6 +6,10 @@
 - Styling: Tailwind CSS only (single approach, no mixed CSS modules).
 - i18n: All user-facing strings must come from `messages/tr.json` and `messages/en.json`.
 - Content model: Keep structured records in `data/` (rooms, restaurants, offers, gallery items).
+- CMS mode:
+  - `CMS_PROVIDER=local` uses local `data/*` + translations.
+  - `CMS_PROVIDER=headless` fetches from `CMS_BASE_URL/content/{locale}` with local fallback.
+  - Payload reference: `data/cms-content-example.json`.
 - Booking CTA behavior:
   - Use `BOOKING_URL` when available.
   - Fallback to `/{locale}/book` when not configured.

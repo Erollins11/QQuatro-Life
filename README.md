@@ -38,6 +38,20 @@ cp .env.example .env.local
 - `BOOKING_URL`: If set, all reservation buttons open this external booking URL.
 - If `BOOKING_URL` is empty, reservation buttons point to `/{locale}/book` fallback page.
 - `NEXT_PUBLIC_BASE_URL`: Optional canonical domain for metadata/sitemap/robots.
+- `CMS_PROVIDER`: `local` or `headless`.
+- `CMS_BASE_URL`: Required for `headless`; content is fetched from `CMS_BASE_URL/content/{locale}`.
+- `CMS_API_TOKEN`: Optional bearer token for headless CMS requests.
+- `HOME_HERO_VIDEO_URL`: Optional hero video URL.
+- `GALLERY_VIDEO_URL`: Optional gallery video URL (YouTube or direct video link).
+
+## CMS Integration
+
+- Default mode is `local` and uses `data/*` + `messages/*`.
+- Headless mode merges remote payload on top of local fallback content.
+- API payload example is available at `data/cms-content-example.json`.
+- Local reference endpoint for payload shape:
+  - `GET /api/content/tr`
+  - `GET /api/content/en`
 
 ## Project Structure
 

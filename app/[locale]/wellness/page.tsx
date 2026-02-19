@@ -1,14 +1,15 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import Image from "next/image";
 
 import SectionIntro from "@/app/components/SectionIntro";
+import { media } from "@/data/media";
 import { getI18n, resolveLocale } from "@/lib/page";
 import { buildPageMetadata } from "@/lib/seo";
 
 const wellnessBlocks = [
-  { key: "spa", image: "/placeholders/gallery-spa-1.svg" },
-  { key: "hammam", image: "/placeholders/gallery-spa-2.svg" },
-  { key: "fitness", image: "/placeholders/event.svg" },
+  { key: "spa", image: media.wellness.spa },
+  { key: "hammam", image: media.wellness.hammam },
+  { key: "fitness", image: media.wellness.fitness },
 ] as const;
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {

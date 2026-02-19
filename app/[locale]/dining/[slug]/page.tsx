@@ -1,9 +1,10 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
-import { getRestaurantBySlug, restaurants } from "@/data/restaurants";
+import { restaurants } from "@/data/restaurants";
+import { getCmsContent } from "@/lib/cms";
 import { locales } from "@/lib/i18n";
 import { getI18n, resolveLocale } from "@/lib/page";
 import { buildPageMetadata } from "@/lib/seo";
@@ -19,19 +20,19 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: { params: Promise<DiningParams> }): Promise<Metadata> {
   const { locale, slug } = await params;
-  const venue = getRestaurantBySlug(slug);
+  const resolvedLocale = await resolveLocale(Promise.resolve({ locale }));
+  const { t } = await getI18n(resolvedLocale);
+  const cms = await getCmsContent(resolvedLocale, t);
 
+  const venue = cms.restaurants.find((item) => item.slug === slug);
   if (!venue) {
     return {};
   }
 
-  const resolvedLocale = await resolveLocale(Promise.resolve({ locale }));
-  const { t } = await getI18n(resolvedLocale);
-
   return buildPageMetadata({
     locale: resolvedLocale,
-    title: t(venue.titleKey),
-    description: t(venue.shortDescriptionKey),
+    title: venue.title,
+    description: venue.shortDescription,
     path: `/dining/${venue.slug}`,
   });
 }
@@ -40,8 +41,9 @@ export default async function DiningDetailPage({ params }: { params: Promise<Din
   const { slug } = await params;
   const locale = await resolveLocale(params.then((value) => ({ locale: value.locale })));
   const { t } = await getI18n(locale);
+  const cms = await getCmsContent(locale, t);
 
-  const venue = getRestaurantBySlug(slug);
+  const venue = cms.restaurants.find((item) => item.slug === slug);
   if (!venue) {
     notFound();
   }
@@ -56,41 +58,41 @@ export default async function DiningDetailPage({ params }: { params: Promise<Din
         <div className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
           <article className="glass-card overflow-hidden rounded-2xl">
             <div className="relative h-72 w-full md:h-96">
-              <Image src={venue.images[0]} alt={t(venue.titleKey)} fill className="object-cover" priority sizes="(max-width: 1024px) 100vw, 60vw" />
+              <Image src={venue.images[0]} alt={venue.title} fill className="object-cover" priority sizes="(max-width: 1024px) 100vw, 60vw" />
             </div>
             <div className="grid gap-3 p-4 md:grid-cols-2">
               {venue.images.slice(1).map((image) => (
                 <div key={image} className="relative h-36 overflow-hidden rounded-xl">
-                  <Image src={image} alt={t(venue.titleKey)} fill className="object-cover" sizes="(max-width: 1024px) 100vw, 30vw" />
+                  <Image src={image} alt={venue.title} fill className="object-cover" sizes="(max-width: 1024px) 100vw, 30vw" />
                 </div>
               ))}
             </div>
           </article>
 
           <aside className="glass-card rounded-2xl p-6">
-            <h1 className="text-4xl text-brand-paper">{t(venue.titleKey)}</h1>
-            <p className="mt-3 text-brand-muted">{t(venue.descriptionKey)}</p>
+            <h1 className="text-4xl text-brand-paper">{venue.title}</h1>
+            <p className="mt-3 text-brand-muted">{venue.description}</p>
 
             <dl className="mt-6 space-y-3 text-sm text-brand-muted">
               <div>
                 <dt className="font-semibold text-brand-paper">{t("dining.detail.concept")}</dt>
-                <dd>{t(venue.conceptKey)}</dd>
+                <dd>{venue.concept}</dd>
               </div>
               <div>
                 <dt className="font-semibold text-brand-paper">{t("dining.detail.hours")}</dt>
-                <dd>{t(venue.hoursKey)}</dd>
+                <dd>{venue.hours}</dd>
               </div>
-              {venue.dressCodeKey ? (
+              {venue.dressCode ? (
                 <div>
                   <dt className="font-semibold text-brand-paper">{t("dining.detail.dressCode")}</dt>
-                  <dd>{t(venue.dressCodeKey)}</dd>
+                  <dd>{venue.dressCode}</dd>
                 </div>
               ) : null}
             </dl>
 
             <ul className="mt-5 space-y-1 text-sm text-brand-muted">
               {venue.features.map((feature) => (
-                <li key={feature}>• {t(feature)}</li>
+                <li key={feature}>• {feature}</li>
               ))}
             </ul>
           </aside>

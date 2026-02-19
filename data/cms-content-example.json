@@ -1,0 +1,31 @@
+{
+  "home": {
+    "heroImage": "https://cms.example.com/media/hero.jpg",
+    "heroImageAlt": "OTEL_ADI Hero",
+    "heroVideoUrl": "https://cms.example.com/media/hero.mp4",
+    "galleryVideoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "galleryVideoPoster": "https://cms.example.com/media/gallery-poster.jpg"
+  },
+  "rooms": [
+    {
+      "slug": "azure-deluxe",
+      "title": "Azure Deluxe Room",
+      "shortDescription": "Sea-view premium room.",
+      "description": "Extended room detail from CMS.",
+      "features": ["Private terrace", "Sea view", "Rain shower"],
+      "images": [
+        "https://cms.example.com/media/rooms/azure-1.jpg",
+        "https://cms.example.com/media/rooms/azure-2.jpg"
+      ],
+      "area": 38,
+      "capacity": 2,
+      "view": "sea",
+      "bedType": "king",
+      "hasPrivatePool": false,
+      "isVilla": false
+    }
+  ],
+  "restaurants": [],
+  "offers": [],
+  "galleryItems": []
+}

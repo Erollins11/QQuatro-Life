@@ -1,4 +1,5 @@
-﻿import type { Restaurant } from "@/data/types";
+import { media } from "@/data/media";
+import type { Restaurant } from "@/data/types";
 
 export const restaurants: Restaurant[] = [
   {
@@ -10,7 +11,7 @@ export const restaurants: Restaurant[] = [
     hoursKey: "dining.venues.auraMainRestaurant.hours",
     dressCodeKey: "dining.venues.auraMainRestaurant.dressCode",
     features: ["features.localProduce", "features.tastingMenu", "features.terrace"],
-    images: ["/placeholders/dining-aura.svg", "/placeholders/dining-chef.svg"],
+    images: [media.dining.aura, media.dining.shoreline],
   },
   {
     slug: "shoreline-grill",
@@ -21,7 +22,7 @@ export const restaurants: Restaurant[] = [
     hoursKey: "dining.venues.shorelineGrill.hours",
     dressCodeKey: "dining.venues.shorelineGrill.dressCode",
     features: ["features.woodFire", "features.freshSeafood", "features.sunsetTable"],
-    images: ["/placeholders/dining-shore.svg", "/placeholders/dining-table.svg"],
+    images: [media.dining.shoreline, media.dining.aura],
   },
   {
     slug: "cove-lounge-bar",
@@ -32,7 +33,7 @@ export const restaurants: Restaurant[] = [
     hoursKey: "dining.venues.coveLoungeBar.hours",
     dressCodeKey: "dining.venues.coveLoungeBar.dressCode",
     features: ["features.signatureCocktails", "features.liveDJ", "features.pianoNights"],
-    images: ["/placeholders/dining-bar.svg", "/placeholders/dining-lounge.svg"],
+    images: [media.dining.cove, media.dining.aura],
   },
 ];
 

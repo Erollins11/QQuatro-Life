@@ -1,4 +1,5 @@
-﻿import type { Room } from "@/data/types";
+import { media } from "@/data/media";
+import type { Room } from "@/data/types";
 
 export const rooms: Room[] = [
   {
@@ -6,12 +7,8 @@ export const rooms: Room[] = [
     titleKey: "accommodation.rooms.azureDeluxe.title",
     shortDescriptionKey: "accommodation.rooms.azureDeluxe.shortDescription",
     descriptionKey: "accommodation.rooms.azureDeluxe.description",
-    features: [
-      "features.privateTerrace",
-      "features.seaView",
-      "features.rainShower",
-    ],
-    images: ["/placeholders/room-azure.svg", "/placeholders/room-suite.svg"],
+    features: ["features.privateTerrace", "features.seaView", "features.rainShower"],
+    images: [media.rooms.deluxe, media.rooms.gardenSuite],
     area: 38,
     capacity: 2,
     view: "sea",
@@ -24,12 +21,8 @@ export const rooms: Room[] = [
     titleKey: "accommodation.rooms.gardenSuite.title",
     shortDescriptionKey: "accommodation.rooms.gardenSuite.shortDescription",
     descriptionKey: "accommodation.rooms.gardenSuite.description",
-    features: [
-      "features.gardenAccess",
-      "features.espressoCorner",
-      "features.daybed",
-    ],
-    images: ["/placeholders/room-garden.svg", "/placeholders/room-lounge.svg"],
+    features: ["features.gardenAccess", "features.espressoCorner", "features.daybed"],
+    images: [media.rooms.gardenSuite, media.rooms.familyResidence],
     area: 46,
     capacity: 3,
     view: "garden",
@@ -42,12 +35,8 @@ export const rooms: Room[] = [
     titleKey: "accommodation.rooms.bayPremium.title",
     shortDescriptionKey: "accommodation.rooms.bayPremium.shortDescription",
     descriptionKey: "accommodation.rooms.bayPremium.description",
-    features: [
-      "features.panoramaBalcony",
-      "features.marbleBath",
-      "features.butlerOnRequest",
-    ],
-    images: ["/placeholders/room-bay.svg", "/placeholders/room-terrace.svg"],
+    features: ["features.panoramaBalcony", "features.marbleBath", "features.butlerOnRequest"],
+    images: [media.rooms.deluxe, media.homeHero],
     area: 52,
     capacity: 3,
     view: "bay",
@@ -60,12 +49,8 @@ export const rooms: Room[] = [
     titleKey: "accommodation.rooms.lagoonPoolSuite.title",
     shortDescriptionKey: "accommodation.rooms.lagoonPoolSuite.shortDescription",
     descriptionKey: "accommodation.rooms.lagoonPoolSuite.description",
-    features: [
-      "features.privatePool",
-      "features.poolDeck",
-      "features.smartRoom",
-    ],
-    images: ["/placeholders/room-pool.svg", "/placeholders/room-water.svg"],
+    features: ["features.privatePool", "features.poolDeck", "features.smartRoom"],
+    images: [media.rooms.lagoonPool, media.experiences.beachPool],
     area: 58,
     capacity: 2,
     view: "sea",
@@ -78,12 +63,8 @@ export const rooms: Room[] = [
     titleKey: "accommodation.rooms.familyResidence.title",
     shortDescriptionKey: "accommodation.rooms.familyResidence.shortDescription",
     descriptionKey: "accommodation.rooms.familyResidence.description",
-    features: [
-      "features.twoBedrooms",
-      "features.kidsNook",
-      "features.kitchenette",
-    ],
-    images: ["/placeholders/room-family.svg", "/placeholders/room-living.svg"],
+    features: ["features.twoBedrooms", "features.kidsNook", "features.kitchenette"],
+    images: [media.rooms.familyResidence, media.rooms.gardenSuite],
     area: 74,
     capacity: 4,
     view: "garden",
@@ -96,12 +77,8 @@ export const rooms: Room[] = [
     titleKey: "accommodation.rooms.horizonVilla.title",
     shortDescriptionKey: "accommodation.rooms.horizonVilla.shortDescription",
     descriptionKey: "accommodation.rooms.horizonVilla.description",
-    features: [
-      "features.villaPrivacy",
-      "features.privatePool",
-      "features.sunsetLounge",
-    ],
-    images: ["/placeholders/room-villa.svg", "/placeholders/room-villa-interior.svg"],
+    features: ["features.villaPrivacy", "features.privatePool", "features.sunsetLounge"],
+    images: [media.rooms.familyResidence, media.rooms.deluxe],
     area: 110,
     capacity: 5,
     view: "sea",
