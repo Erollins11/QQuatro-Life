@@ -1,7 +1,9 @@
-﻿import Link from "next/link";
+import Image from "next/image";
+import Link from "next/link";
 
-import { getBookingLink, siteConfig } from "@/config/site";
 import LocaleSwitcher from "@/app/components/LocaleSwitcher";
+import { getBookingLink, siteConfig } from "@/config/site";
+import { media } from "@/data/media";
 import type { Locale } from "@/lib/i18n";
 import { getLocalizedPath } from "@/lib/i18n";
 
@@ -35,10 +37,13 @@ export default function SiteHeader({ locale, t }: SiteHeaderProps) {
       </a>
 
       <div className="page-shell flex flex-wrap items-center justify-between gap-4 py-4">
-        <Link href={getLocalizedPath(locale)} className="group inline-flex items-center gap-2">
-          <span className="text-xs font-semibold uppercase tracking-[0.28em] text-brand-muted">{t("home.hero.eyebrow")}</span>
-          <span className="text-2xl font-semibold text-brand-paper transition group-hover:text-brand-sand">
-            {siteConfig.hotelName}
+        <Link href={getLocalizedPath(locale)} className="group inline-flex items-center gap-4">
+          <span className="relative h-20 w-20 overflow-hidden rounded-xl border border-brand-line bg-brand-paper p-1 shadow-sm md:h-24 md:w-24">
+            <Image src={media.logo} alt={`${siteConfig.hotelName} logo`} fill className="object-contain" sizes="96px" priority />
+          </span>
+          <span>
+            <span className="block text-[10px] font-semibold uppercase tracking-[0.28em] text-brand-muted">{t("home.hero.eyebrow")}</span>
+            <span className="block text-2xl font-semibold text-brand-paper transition group-hover:text-brand-sand">{siteConfig.hotelName}</span>
           </span>
         </Link>
 

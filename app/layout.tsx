@@ -7,7 +7,7 @@ import { siteConfig } from "@/config/site";
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.baseUrl),
   title: {
-    default: `${siteConfig.hotelName} Bodrum`,
+    default: `${siteConfig.hotelName} Gumbet`,
     template: `%s | ${siteConfig.hotelName}`,
   },
   description: siteConfig.description,

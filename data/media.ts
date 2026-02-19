@@ -1,4 +1,5 @@
 export const media = {
+  logo: "/images/logo.jpg",
   homeHero: "/images/home-hero.jpg",
   galleryVideoPoster: "/images/gallery-pier.jpg",
 

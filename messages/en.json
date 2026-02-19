@@ -54,11 +54,11 @@
     "skipToContent": "Skip to content"
   },
   "seo": {
-    "siteTitle": "OTEL_ADI Bodrum",
+    "siteTitle": "Quatro Life Gumbet",
     "defaultDescription": "Premium boutique hotel in Bodrum with refined dining and direct booking.",
     "home": {
       "title": "Premium Boutique Living in Bodrum",
-      "description": "OTEL_ADI combines coastal calm, fine dining and design-led hospitality in Bodrum." 
+      "description": "Quatro Life combines coastal calm, fine dining and design-led hospitality in Bodrum." 
     },
     "accommodation": {
       "title": "Accommodation",
@@ -108,9 +108,9 @@
   },
   "home": {
     "hero": {
-      "eyebrow": "Bodrum, Turkiye",
+      "eyebrow": "Gumbet, Bodrum",
       "title": "A calm yet character-driven luxury escape on the Aegean",
-      "subtitle": "OTEL_ADI transforms premium comfort into a daily rhythm of sea, dining and wellness.",
+      "subtitle": "Quatro Life transforms premium comfort into a daily rhythm of sea, dining and wellness.",
       "primaryCta": "Book Now",
       "secondaryCta": "Chat on WhatsApp"
     },
@@ -437,11 +437,11 @@
     "transferTitle": "Transfer",
     "transport": {
       "airport": "Milas-Bodrum Airport: approx. 50 min",
-      "marina": "Yalikavak Marina: approx. 10 min",
+      "marina": "Bodrum Marina: approx. 15 min",
       "cityCenter": "Bodrum Center: approx. 25 min"
     },
     "mapPlaceholder": "Map embed area (placeholder)",
-    "quickMessage": "Hello, could I get availability details for OTEL_ADI?",
+    "quickMessage": "Hello, could I get availability details for Quatro Life?",
     "form": {
       "title": "General Contact Form",
       "name": "Full Name",
@@ -473,7 +473,7 @@
   "legal": {
     "kvkk": {
       "title": "KVKK Information Notice",
-      "intro": "Your personal data is processed by OTEL_ADI as data controller under Law No. 6698.",
+      "intro": "Your personal data is processed by Quatro Life as data controller under Law No. 6698.",
       "sections": {
         "purposeTitle": "Processing Purpose",
         "purposeText": "Booking, stay operations, communication and fulfillment of legal obligations.",

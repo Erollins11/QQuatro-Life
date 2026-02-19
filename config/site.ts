@@ -1,15 +1,15 @@
 ﻿import type { Locale } from "@/lib/i18n";
 
 export const siteConfig = {
-  hotelName: "OTEL_ADI",
-  location: "Bodrum, Turkiye",
+  hotelName: "Quatro Life",
+  location: "Gumbet, Bodrum, Turkiye",
   brandTone: "boutique" as const,
   description:
-    "Bodrum sahilinde premium konaklama, rafine gastronomi ve yalın lüks deneyimi.",
+    "Gumbet sahilinde premium konaklama, rafine gastronomi ve yalin luks deneyimi.",
   phone: "+90 252 000 00 00",
-  email: "hello@oteladi.com",
+  email: "hello@quatrolife.com",
   whatsappNumber: "+905320000000",
-  address: "Yalikavak Mahallesi, Sahil Caddesi No:12, Bodrum / Mugla",
+  address: "Gumbet Mahallesi, Adnan Menderes Caddesi No:47, Bodrum / Mugla",
   socialLinks: [
     { label: "Instagram", href: "https://instagram.com" },
     { label: "Facebook", href: "https://facebook.com" },

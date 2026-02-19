@@ -54,11 +54,11 @@
     "skipToContent": "Icerige gec"
   },
   "seo": {
-    "siteTitle": "OTEL_ADI Bodrum",
+    "siteTitle": "Quatro Life Gumbet",
     "defaultDescription": "Bodrum'da premium butik otel deneyimi, rafine mutfak ve dogrudan rezervasyon.",
     "home": {
       "title": "Bodrum'da Premium Butik Yasam",
-      "description": "OTEL_ADI ile Bodrum kiyisinda zarif konaklama, gastronomi ve deneyim odakli tatil." 
+      "description": "Quatro Life ile Bodrum kiyisinda zarif konaklama, gastronomi ve deneyim odakli tatil." 
     },
     "accommodation": {
       "title": "Konaklama Secenekleri",
@@ -108,9 +108,9 @@
   },
   "home": {
     "hero": {
-      "eyebrow": "Bodrum, Turkiye",
+      "eyebrow": "Gumbet, Bodrum",
       "title": "Ege'nin mavisinde sakin ama karakterli bir luks kacisi",
-      "subtitle": "OTEL_ADI, butik olcekte premium konforu; deniz, gastronomi ve wellness odakli bir yasam ritmine donusturur.",
+      "subtitle": "Quatro Life, butik olcekte premium konforu; deniz, gastronomi ve wellness odakli bir yasam ritmine donusturur.",
       "primaryCta": "Rezervasyon",
       "secondaryCta": "WhatsApp ile Yaz"
     },
@@ -437,11 +437,11 @@
     "transferTitle": "Transfer",
     "transport": {
       "airport": "Milas-Bodrum Havalimani: yaklasik 50 dk",
-      "marina": "Yalikavak Marina: yaklasik 10 dk",
+      "marina": "Bodrum Marina: yaklasik 15 dk",
       "cityCenter": "Bodrum Merkez: yaklasik 25 dk"
     },
     "mapPlaceholder": "Harita embed alani (placeholder)",
-    "quickMessage": "Merhaba, OTEL_ADI icin musaitlik bilgisi alabilir miyim?",
+    "quickMessage": "Merhaba, Quatro Life icin musaitlik bilgisi alabilir miyim?",
     "form": {
       "title": "Genel Iletisim Formu",
       "name": "Ad Soyad",
@@ -473,7 +473,7 @@
   "legal": {
     "kvkk": {
       "title": "KVKK Aydinlatma Metni",
-      "intro": "Kisisel verileriniz, 6698 sayili KVKK kapsaminda veri sorumlusu sifatiyla OTEL_ADI tarafindan islenir.",
+      "intro": "Kisisel verileriniz, 6698 sayili KVKK kapsaminda veri sorumlusu sifatiyla Quatro Life tarafindan islenir.",
       "sections": {
         "purposeTitle": "Isleme Amaci",
         "purposeText": "Rezervasyon, konaklama operasyonu, iletisim ve yasal yukumluluklerin yerine getirilmesi.",

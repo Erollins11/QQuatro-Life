@@ -1,4 +1,4 @@
-# OTEL_ADI - Bodrum Hotel Website (Next.js)
+# Quatro Life - Bodrum Hotel Website (Next.js)
 
 Premium, SEO-friendly, bilingual (TR/EN) hotel website built with Next.js App Router and TypeScript.
 

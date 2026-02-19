@@ -1,6 +1,8 @@
-﻿import Link from "next/link";
+import Image from "next/image";
+import Link from "next/link";
 
 import { siteConfig } from "@/config/site";
+import { media } from "@/data/media";
 import type { Locale } from "@/lib/i18n";
 import { getLocalizedPath } from "@/lib/i18n";
 
@@ -14,7 +16,12 @@ export default function SiteFooter({ locale, t }: SiteFooterProps) {
     <footer className="border-t border-brand-line bg-brand-ink/70">
       <div className="page-shell grid gap-10 py-10 md:grid-cols-3">
         <div className="space-y-3">
-          <p className="text-2xl font-semibold">{siteConfig.hotelName}</p>
+          <div className="flex items-center gap-3">
+            <span className="relative h-14 w-14 overflow-hidden rounded-lg border border-brand-line bg-brand-paper p-1">
+              <Image src={media.logo} alt={`${siteConfig.hotelName} logo`} fill className="object-contain" sizes="56px" />
+            </span>
+            <p className="text-2xl font-semibold">{siteConfig.hotelName}</p>
+          </div>
           <p className="text-sm text-brand-muted">{siteConfig.address}</p>
           <a href={`tel:${siteConfig.phone}`} className="block text-sm text-brand-paper hover:text-brand-sand">
             {siteConfig.phone}

@@ -44,7 +44,7 @@ export function buildPageMetadata({
           url: absoluteUrl(media.homeHero),
           width: 1600,
           height: 1000,
-          alt: `${siteConfig.hotelName} Bodrum`,
+          alt: `${siteConfig.hotelName} Gumbet`,
         },
       ],
     },
@@ -90,7 +90,7 @@ export function buildOrganizationJsonLd() {
     "@type": "Organization",
     name: siteConfig.hotelName,
     url: absoluteUrl("/"),
-    logo: absoluteUrl(media.homeHero),
+    logo: absoluteUrl(media.logo),
     contactPoint: {
       "@type": "ContactPoint",
       telephone: siteConfig.phone,
