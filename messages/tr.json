@@ -1,0 +1,561 @@
+{
+  "common": {
+    "localeName": {
+      "tr": "Turkce",
+      "en": "English"
+    },
+    "actions": {
+      "book": "Rezervasyon",
+      "checkAvailability": "Musaitlik Kontrol Et",
+      "contact": "Iletisim",
+      "whatsapp": "WhatsApp",
+      "learnMore": "Detaylari Incele",
+      "viewDetails": "Detaylari Gor",
+      "requestOffer": "Teklif Iste",
+      "send": "Gonder",
+      "applyFilters": "Filtrele",
+      "clearFilters": "Sifirla",
+      "back": "Geri",
+      "explore": "Kesfet",
+      "seeAll": "Tumunu Gor"
+    },
+    "labels": {
+      "area": "m2",
+      "capacity": "Kisi",
+      "from": "Baslangic",
+      "until": "Gecerlilik",
+      "concept": "Konsept",
+      "hours": "Calisma Saatleri",
+      "dressCode": "Dress Code",
+      "gallery": "Galeri",
+      "view": "Manzara",
+      "bedType": "Yatak Tipi",
+      "yes": "Evet",
+      "no": "Hayir"
+    }
+  },
+  "navigation": {
+    "home": "Ana Sayfa",
+    "accommodation": "Konaklama",
+    "dining": "Yeme-Icme",
+    "experiences": "Deneyimler",
+    "wellness": "Wellness",
+    "offers": "Teklifler",
+    "events": "Etkinlikler",
+    "gallery": "Galeri",
+    "contact": "Lokasyon & Iletisim",
+    "tour": "Sanal Tur"
+  },
+  "header": {
+    "aria": {
+      "mainNav": "Ana menu",
+      "language": "Dil secimi"
+    },
+    "skipToContent": "Icerige gec"
+  },
+  "seo": {
+    "siteTitle": "OTEL_ADI Bodrum",
+    "defaultDescription": "Bodrum'da premium butik otel deneyimi, rafine mutfak ve dogrudan rezervasyon.",
+    "home": {
+      "title": "Bodrum'da Premium Butik Yasam",
+      "description": "OTEL_ADI ile Bodrum kiyisinda zarif konaklama, gastronomi ve deneyim odakli tatil." 
+    },
+    "accommodation": {
+      "title": "Konaklama Secenekleri",
+      "description": "Deniz manzarali odalar, suite'ler ve ozel havuzlu villa secenekleri."
+    },
+    "dining": {
+      "title": "Yeme-Icme",
+      "description": "Yerel urunlerle hazirlanan rafine mutfak ve imza kokteyl deneyimi."
+    },
+    "experiences": {
+      "title": "Deneyimler",
+      "description": "Plajdan yat turlarina uzanan Bodrum deneyimleri."
+    },
+    "wellness": {
+      "title": "Wellness",
+      "description": "Spa, hamam ve fitness ile yenilenme ritueli."
+    },
+    "offers": {
+      "title": "Teklifler",
+      "description": "Erken rezervasyon, uzun konaklama ve balayi paketleri."
+    },
+    "events": {
+      "title": "Etkinlikler",
+      "description": "Dugun ve toplantilar icin premium alanlar ve butunsel organizasyon."
+    },
+    "gallery": {
+      "title": "Galeri",
+      "description": "Otelin atmosferini yansitan secili kareler."
+    },
+    "contact": {
+      "title": "Lokasyon ve Iletisim",
+      "description": "Adres, ulasim, transfer bilgileri ve hizli iletisim formu."
+    },
+    "book": {
+      "title": "Rezervasyon",
+      "description": "Rezervasyon altyapisi hazir degilken yonlendirilen bilgi sayfasi."
+    },
+    "tour": {
+      "title": "Sanal Tur",
+      "description": "360 sanal tur alaninin yakinda aktif olacagi placeholder sayfa."
+    },
+    "legal": {
+      "kvkk": "KVKK",
+      "privacy": "Gizlilik Politikasi",
+      "cookies": "Cerez Politikasi"
+    }
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Bodrum, Turkiye",
+      "title": "Ege'nin mavisinde sakin ama karakterli bir luks kacisi",
+      "subtitle": "OTEL_ADI, butik olcekte premium konforu; deniz, gastronomi ve wellness odakli bir yasam ritmine donusturur.",
+      "primaryCta": "Rezervasyon",
+      "secondaryCta": "WhatsApp ile Yaz"
+    },
+    "quickCards": {
+      "accommodation": {
+        "title": "Konaklama",
+        "description": "Oda ve suite secenekleri"
+      },
+      "dining": {
+        "title": "Yeme-Icme",
+        "description": "Rafine mutfak & barlar"
+      },
+      "experiences": {
+        "title": "Deneyimler",
+        "description": "Denizle butunlesen aktiviteler"
+      },
+      "wellness": {
+        "title": "Wellness",
+        "description": "Spa, hamam ve fitness"
+      },
+      "offers": {
+        "title": "Teklifler",
+        "description": "Donemsel avantaj paketleri"
+      }
+    },
+    "conceptBand": {
+      "label": "Konsept Netligi",
+      "title": "Butik luks konsepti",
+      "description": "Kucuk olcekte, sessiz, detay odakli ve yuksek hizmet standardina sahip premium tatil deneyimi."
+    },
+    "contactCta": {
+      "title": "Hizli Iletisim",
+      "description": "Rezervasyon ve sorulariniz icin aninda ulasin.",
+      "whatsapp": "WhatsApp",
+      "phone": "Telefon"
+    },
+    "seasonBanner": {
+      "title": "Sezon Duyurusu",
+      "description": "2026 sezonu {openingDate} - {closingDate} tarihleri arasinda aciktir."
+    },
+    "upsells": {
+      "title": "Deneyiminizi Yukseltin",
+      "subtitle": "Konaklamaniza ekstra konfor ve ayricaliklar ekleyin.",
+      "cabana": {
+        "title": "Cabana",
+        "description": "Gun boyu ozel servisli, golgeli deniz kenari cabana alanlari."
+      },
+      "dayPass": {
+        "title": "Day-pass",
+        "description": "Konaklama disi gunluk plaj ve havuz kullanim paketi."
+      },
+      "transfer": {
+        "title": "Transfer",
+        "description": "Havalimani ve marinadan ozel transfer planlama destegi."
+      }
+    }
+  },
+  "accommodation": {
+    "title": "Konaklama",
+    "subtitle": "Metrekare, manzara ve yasam tarzina gore secilen odalar.",
+    "filters": {
+      "title": "Filtrele",
+      "people": "Kisi sayisi",
+      "area": "m2 araligi",
+      "view": "Manzara",
+      "bedType": "Yatak tipi",
+      "poolOrVilla": "Havuzlu / Villa",
+      "all": "Hepsi",
+      "views": {
+        "sea": "Deniz",
+        "garden": "Bahce",
+        "bay": "Koy"
+      },
+      "beds": {
+        "king": "King",
+        "twin": "Twin",
+        "family": "Aile"
+      },
+      "poolOrVillaOptions": {
+        "onlyPoolOrVilla": "Sadece havuzlu/villa"
+      },
+      "emptyState": "Secilen kriterlere uygun oda bulunamadi."
+    },
+    "card": {
+      "area": "Alan",
+      "capacity": "Kapasite",
+      "features": "One Cikanlar"
+    },
+    "detail": {
+      "overview": "Oda Detayi",
+      "specs": "Teknik Bilgi",
+      "reserveNote": "Rezervasyon asamasinda tarih ve fiyat detayi dogrulanir."
+    },
+    "rooms": {
+      "azureDeluxe": {
+        "title": "Azure Deluxe Oda",
+        "shortDescription": "Deniz manzarali, gun batimi odakli premium oda.",
+        "description": "Genis balkonlu Azure Deluxe, yalnizca iki kisi icin tasarlanan sakin ve rafine bir deniz deneyimi sunar."
+      },
+      "gardenSuite": {
+        "title": "Garden Suite",
+        "shortDescription": "Bahceye acilan, yasam alani genis suite.",
+        "description": "Dogal dokularla tasarlanan Garden Suite, sabah kahvesini yesillik icinde yasamak isteyen misafirler icin idealdir."
+      },
+      "bayPremium": {
+        "title": "Bay Premium",
+        "shortDescription": "Koy manzarali, mermer banyolu premium konaklama.",
+        "description": "Yuksek tavanli Bay Premium, Bodrum koyunu genis acida izleyebileceginiz balkon deneyimiyle one cikar."
+      },
+      "lagoonPoolSuite": {
+        "title": "Lagoon Pool Suite",
+        "shortDescription": "Ozel havuzlu, ciftler icin sessiz suite.",
+        "description": "Dogrudan suyla temas eden teras kurgusu sayesinde Lagoon Pool Suite, gune mahremiyetle baslamak isteyenler icin tasarlandi."
+      },
+      "familyResidence": {
+        "title": "Family Residence",
+        "shortDescription": "Iki odali, aile odakli ferah yasam alani.",
+        "description": "Aileler icin optimize edilen planlama; cocuklar ve yetiskinler icin ayri konfor zonlari sunar."
+      },
+      "horizonVilla": {
+        "title": "Horizon Villa",
+        "shortDescription": "Ozel havuzlu, villada en yuksek mahremiyet.",
+        "description": "Panoramik deniz acisina sahip Horizon Villa, premium hizmet ve genis yasam alaniyla uzun konaklamalar icin tasarlandi."
+      }
+    }
+  },
+  "dining": {
+    "title": "Yeme-Icme",
+    "subtitle": "Bodrum'un urunleriyle kurgulanan rafine bir lezzet cizgisi.",
+    "detail": {
+      "concept": "Konsept",
+      "hours": "Calisma Saatleri",
+      "dressCode": "Dress Code",
+      "gallery": "Galeri"
+    },
+    "venues": {
+      "auraMainRestaurant": {
+        "title": "Aura Main Restaurant",
+        "shortDescription": "Akdeniz esintili tadim menusu odakli ana restoran.",
+        "description": "Mevsimsel urunlerle degisen menusu ve sakin servis ritmiyle gun boyu rafine bir deneyim sunar.",
+        "concept": "Yerel urunler + modern Akdeniz mutfagi",
+        "hours": "07:00 - 11:00 / 19:00 - 23:00",
+        "dressCode": "Smart casual"
+      },
+      "shorelineGrill": {
+        "title": "Shoreline Grill",
+        "shortDescription": "Deniz kenarinda odun atesli izgara konsepti.",
+        "description": "Taze deniz urunleri ve ates dokunusuyla olusan aksam servisi, gun batimina odakli bir atmosfer sunar.",
+        "concept": "Odun atesi + deniz urunleri",
+        "hours": "12:30 - 17:30 / 19:30 - 00:00",
+        "dressCode": "Resort chic"
+      },
+      "coveLoungeBar": {
+        "title": "Cove Lounge Bar",
+        "shortDescription": "Imza kokteyl ve gece ritmi sunan lounge.",
+        "description": "Gunun sonunu piano ve DJ setleriyle tamamlayan sosyal odakli bar alani.",
+        "concept": "Craft kokteyl + muzik programi",
+        "hours": "17:00 - 01:00",
+        "dressCode": "Evening elegant"
+      }
+    }
+  },
+  "experiences": {
+    "title": "Deneyimler",
+    "subtitle": "Bodrum'un deniz ve hareket odakli yasam ritmini kesfedin.",
+    "blocks": {
+      "beachPool": {
+        "title": "Plaj & Havuz",
+        "description": "Ozel iskele, sakin havuz zonlari ve tum gun cabana servisi."
+      },
+      "waterSports": {
+        "title": "Su Sporlari",
+        "description": "Paddle, kano ve denizde rehberli aktivite paketleri (placeholder)."
+      },
+      "yacht": {
+        "title": "Tekne / Yat",
+        "description": "Gunluk koy rotalari ve kisisel tekne planlama destegi (placeholder)."
+      },
+      "sports": {
+        "title": "Spor & Aktivite",
+        "description": "Sabah pilatesi, fonksiyonel antrenman ve koc esliginde programlar."
+      }
+    }
+  },
+  "wellness": {
+    "title": "Wellness",
+    "subtitle": "Beden ve zihin dengesine odaklanan rituel bazli alanlar.",
+    "blocks": {
+      "spa": {
+        "title": "Spa",
+        "description": "Aromaterapi ve imza bakim ritueli ile butunsel yenilenme."
+      },
+      "hammam": {
+        "title": "Hamam",
+        "description": "Geleneksel hamam deneyimini modern hijyen ve konforla birlestiren kurgu."
+      },
+      "fitness": {
+        "title": "Fitness",
+        "description": "Deniz manzarali ekipmanlar ve bireysel antrenman plani destegi."
+      }
+    },
+    "appointmentCta": "Randevu talebi yakinda aktif olacak"
+  },
+  "offers": {
+    "title": "Teklifler",
+    "subtitle": "Donemsel avantajlarla premium deneyimi daha esnek planlayin.",
+    "validUntil": "Gecerlilik",
+    "features": {
+      "discount20": "%20 erken rezervasyon indirimi",
+      "breakfast": "Kahvalti dahil",
+      "freeUpgrade": "Musaitlikte oda upgrade",
+      "discount15": "%15 uzun konaklama indirimi",
+      "airportTransfer": "Cift yon havaalani transferi",
+      "laundry": "Haftalik laundry paketi",
+      "roomDecoration": "Balayi oda dekorasyonu",
+      "coupleMassage": "Ciftlere ozel masaj seansi",
+      "privateDinner": "Iki kisilik ozel aksam yemegi"
+    },
+    "items": {
+      "earlyBooking": {
+        "title": "Erken Rezervasyon",
+        "shortDescription": "Sezona avantajli fiyatlarla giris paketi.",
+        "description": "Belirli tarihlerde erken planlama yapan misafirler icin fiyat avantaji ve esnek degisiklik kosullari sunar."
+      },
+      "longStay": {
+        "title": "Uzun Konaklama",
+        "shortDescription": "7 gece ve uzeri konaklamalara ozel paket.",
+        "description": "Uzun sureli tatiller icin transfer, laundry ve ek hizmetlerle optimize edilmis bir avantaj setidir."
+      },
+      "honeymoon": {
+        "title": "Balayi",
+        "shortDescription": "Romantik detaylarla kurgulanan premium balayi deneyimi.",
+        "description": "Ozel dekorasyon, cift masaji ve gun batimi yemegiyle tamamlanan romantik konaklama paketi."
+      }
+    },
+    "detail": {
+      "terms": "Kosullar ve tarih araligi rezervasyon asamasinda kesinlesir."
+    }
+  },
+  "events": {
+    "title": "Etkinlikler",
+    "subtitle": "Dugunler ve kurumsal toplantilar icin esnek ve prestijli alanlar.",
+    "weddings": {
+      "title": "Dugunler",
+      "description": "Sahil seremonisi, ozel menu ve event ekibi koordinasyonu ile uctan uca dugun plani."
+    },
+    "meetings": {
+      "title": "Toplantilar",
+      "description": "Kucuk ve orta olcekli ekipler icin teknik altyapili toplanti odalari ve catering destegi."
+    },
+    "form": {
+      "title": "Teklif Iste",
+      "name": "Ad Soyad",
+      "email": "E-posta",
+      "phone": "Telefon",
+      "date": "Tarih",
+      "message": "Mesaj",
+      "submit": "Teklif Talep Et",
+      "success": "Talebiniz alindi. Ekibimiz sizinle en kisa surede iletisime gececek.",
+      "errors": {
+        "name": "Lutfen adinizi girin.",
+        "email": "Gecerli bir e-posta girin.",
+        "phone": "Telefon numarasi gerekli.",
+        "date": "Tarih secin.",
+        "message": "Mesaj en az 10 karakter olmali."
+      }
+    }
+  },
+  "gallery": {
+    "title": "Galeri",
+    "subtitle": "Mekanlari, detaylari ve atmosferi kesfedin.",
+    "filters": {
+      "all": "Tum Kategoriler",
+      "hotel": "Hotel",
+      "rooms": "Rooms",
+      "dining": "Dining",
+      "beach": "Beach",
+      "spa": "Spa"
+    },
+    "videoPlaceholder": {
+      "title": "Video Alani",
+      "description": "Tanitim videosu veya drone cekimi bu alanda yayinlanacak (placeholder)."
+    },
+    "items": {
+      "lobbyArrival": {
+        "title": "Lobi Karsilama",
+        "shortDescription": "Dogal materyallerle tasarlanan premium giris atmosferi."
+      },
+      "deluxeRoomView": {
+        "title": "Deluxe Oda Manzarasi",
+        "shortDescription": "Egeye acilan balkon ve sakin renk paleti."
+      },
+      "chefTable": {
+        "title": "Chef's Table",
+        "shortDescription": "Acilik mutfak deneyimi ve tadim servisi."
+      },
+      "sunsetPier": {
+        "title": "Gunaydin Iskelesi",
+        "shortDescription": "Gun batiminda lounge ritmiyle ozel iskele alanı."
+      },
+      "spaRitual": {
+        "title": "Spa Ritueli",
+        "shortDescription": "Sessiz terapi odalarinda aromaterapi deneyimi."
+      },
+      "poolSuite": {
+        "title": "Pool Suite",
+        "shortDescription": "Suyla butunlesen ozel teras kurgusu."
+      },
+      "beachClub": {
+        "title": "Beach Club",
+        "shortDescription": "Gun boyu muzik ve imza kokteyl servisi."
+      },
+      "wellnessLounge": {
+        "title": "Wellness Lounge",
+        "shortDescription": "Bakim sonrasi dinlenme ve bitki cayi alanı."
+      }
+    }
+  },
+  "contact": {
+    "title": "Lokasyon & Iletisim",
+    "subtitle": "Bize ulasin, Bodrum yolculugunuzu birlikte planlayalim.",
+    "addressTitle": "Adres",
+    "transportTitle": "Ulasim",
+    "transferTitle": "Transfer",
+    "transport": {
+      "airport": "Milas-Bodrum Havalimani: yaklasik 50 dk",
+      "marina": "Yalikavak Marina: yaklasik 10 dk",
+      "cityCenter": "Bodrum Merkez: yaklasik 25 dk"
+    },
+    "mapPlaceholder": "Harita embed alani (placeholder)",
+    "quickMessage": "Merhaba, OTEL_ADI icin musaitlik bilgisi alabilir miyim?",
+    "form": {
+      "title": "Genel Iletisim Formu",
+      "name": "Ad Soyad",
+      "email": "E-posta",
+      "subject": "Konu",
+      "message": "Mesaj",
+      "submit": "Mesaj Gonder",
+      "success": "Mesajiniz iletildi. Ekibimiz size geri donecek.",
+      "errors": {
+        "name": "Ad alani zorunlu.",
+        "email": "Gecerli bir e-posta girin.",
+        "subject": "Konu en az 3 karakter olmali.",
+        "message": "Mesaj en az 10 karakter olmali."
+      }
+    }
+  },
+  "book": {
+    "title": "Rezervasyon",
+    "subtitle": "Anlik rezervasyon baglantisi tanimli degil.",
+    "unavailableTitle": "Rezervasyon altyapisi baglanmadi",
+    "unavailableDescription": "BOOKING_URL tanimlandiginda bu buton dogrudan rezervasyon motoruna yonlenecek.",
+    "contactAlternative": "Bu surecte WhatsApp veya telefon ile ekibimizden destek alabilirsiniz."
+  },
+  "tour": {
+    "title": "360 Sanal Tur",
+    "subtitle": "Sanal tur altyapisi yakinda aktif olacak.",
+    "placeholder": "Bu alan, 360 derece oda ve tesis turu bileseni icin hazirlanmistir."
+  },
+  "legal": {
+    "kvkk": {
+      "title": "KVKK Aydinlatma Metni",
+      "intro": "Kisisel verileriniz, 6698 sayili KVKK kapsaminda veri sorumlusu sifatiyla OTEL_ADI tarafindan islenir.",
+      "sections": {
+        "purposeTitle": "Isleme Amaci",
+        "purposeText": "Rezervasyon, konaklama operasyonu, iletisim ve yasal yukumluluklerin yerine getirilmesi.",
+        "legalBasisTitle": "Hukuki Sebep",
+        "legalBasisText": "Kanunlarda acikca ongorulmesi, sozlesmenin ifasi ve mesru menfaat kapsaminda.",
+        "rightsTitle": "Haklariniz",
+        "rightsText": "KVKK'nin 11. maddesi kapsamindaki haklarinizi yazili olarak bize iletebilirsiniz."
+      }
+    },
+    "privacy": {
+      "title": "Gizlilik Politikasi",
+      "intro": "Web sitesi uzerinden paylasilan bilgiler gizlilik prensipleri dogrultusunda korunur.",
+      "sections": {
+        "collectionTitle": "Toplanan Veriler",
+        "collectionText": "Iletisim formlari araciligiyla ad, e-posta, telefon ve mesaj icerigi toplanabilir.",
+        "usageTitle": "Kullanim",
+        "usageText": "Veriler talep yonetimi, hizmet kalitesinin artirilmasi ve iletisim amaciyla kullanilir.",
+        "retentionTitle": "Saklama",
+        "retentionText": "Yasal sureler boyunca ve amacla sinirli olacak sekilde saklanir."
+      }
+    },
+    "cookies": {
+      "title": "Cerez Politikasi",
+      "intro": "Sitede kullanilan cerezler performans ve deneyim iyilestirme amaciyla sinirlidir.",
+      "sections": {
+        "typesTitle": "Cerez Turleri",
+        "typesText": "Zorunlu cerezler, analiz cerezleri ve tercih cerezleri kullanilabilir.",
+        "managementTitle": "Yonetim",
+        "managementText": "Tarayici ayarlarinizdan cerez tercihlerini degistirebilir veya silebilirsiniz.",
+        "updateTitle": "Guncellemeler",
+        "updateText": "Politika metni ihtiyac halinde guncellenebilir; guncel surum bu sayfada yayinlanir."
+      }
+    }
+  },
+  "footer": {
+    "legalTitle": "Yasal",
+    "kvkk": "KVKK",
+    "privacy": "Gizlilik",
+    "cookies": "Cerez Politikasi",
+    "rights": "Tum haklari saklidir.",
+    "followUs": "Bizi Takip Edin"
+  },
+  "features": {
+    "privateTerrace": "Ozel teras",
+    "seaView": "Deniz manzarasi",
+    "rainShower": "Rain shower",
+    "gardenAccess": "Bahceye direkt erisim",
+    "espressoCorner": "Espresso kosesi",
+    "daybed": "Gun boyu daybed",
+    "panoramaBalcony": "Panoramik balkon",
+    "marbleBath": "Mermer banyo",
+    "butlerOnRequest": "Talebe gore butler",
+    "privatePool": "Ozel havuz",
+    "poolDeck": "Genis pool deck",
+    "smartRoom": "Akilli oda otomasyonu",
+    "twoBedrooms": "Iki yatak odasi",
+    "kidsNook": "Cocuk kosesi",
+    "kitchenette": "Kitchenette",
+    "villaPrivacy": "Villa mahremiyeti",
+    "sunsetLounge": "Gun batimi lounge",
+    "localProduce": "Yerel urun odagi",
+    "tastingMenu": "Tadim menusu",
+    "terrace": "Teras servis",
+    "woodFire": "Odun atesi izgara",
+    "freshSeafood": "Gunluk deniz urunu",
+    "sunsetTable": "Gun batimi masasi",
+    "signatureCocktails": "Imza kokteyller",
+    "liveDJ": "Canli DJ set",
+    "pianoNights": "Piano geceleri",
+    "architecture": "Mimari detay",
+    "concierge": "Concierge servisi",
+    "signatureScent": "Imza koku",
+    "linenQuality": "Premium tekstil",
+    "openKitchen": "Acilik mutfak",
+    "privateBeach": "Ozel plaj",
+    "cabanaService": "Cabana servisi",
+    "signatureRitual": "Imza spa ritueli",
+    "hammam": "Hamam deneyimi",
+    "relaxArea": "Relax lounge",
+    "morningLight": "Dogal sabah isigi",
+    "dayPass": "Day-pass konsepti",
+    "herbalTea": "Bitki cayi servisi",
+    "silentZone": "Sessiz bolge"
+  }
+}

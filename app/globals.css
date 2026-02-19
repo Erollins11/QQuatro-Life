@@ -1,0 +1,127 @@
+﻿@import "tailwindcss";
+
+:root {
+  --background: #0b1220;
+  --foreground: #f7f3eb;
+}
+
+@theme inline {
+  --font-sans: "Avenir Next", "Trebuchet MS", "Segoe UI", sans-serif;
+  --font-heading: "Garamond", "Palatino Linotype", "Book Antiqua", serif;
+
+  --color-brand-ink: #0b1220;
+  --color-brand-deep: #13233d;
+  --color-brand-ocean: #1d4d72;
+  --color-brand-sand: #c5a06a;
+  --color-brand-paper: #f7f3eb;
+  --color-brand-muted: #b9c1d0;
+  --color-brand-line: rgba(247, 243, 235, 0.18);
+  --color-brand-card: rgba(14, 24, 41, 0.75);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at 15% 15%, rgba(44, 98, 138, 0.24), transparent 35%),
+    radial-gradient(circle at 85% 5%, rgba(197, 160, 106, 0.2), transparent 30%),
+    linear-gradient(160deg, #081122 0%, #0f1b31 55%, #08101e 100%);
+  color: var(--color-brand-paper);
+  font-family: var(--font-sans);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading), serif;
+  letter-spacing: 0.01em;
+}
+
+a {
+  color: inherit;
+}
+
+.page-shell {
+  margin-inline: auto;
+  width: min(1180px, calc(100% - 2rem));
+}
+
+.section-spacing {
+  padding-block: 4.5rem;
+}
+
+.glass-card {
+  border: 1px solid var(--color-brand-line);
+  background: var(--color-brand-card);
+  backdrop-filter: blur(8px);
+}
+
+.input-base {
+  width: 100%;
+  border-radius: 0.6rem;
+  border: 1px solid rgba(247, 243, 235, 0.25);
+  background: rgba(9, 18, 33, 0.75);
+  color: var(--color-brand-paper);
+  padding: 0.72rem 0.85rem;
+}
+
+.input-base:focus-visible {
+  outline: 2px solid var(--color-brand-sand);
+  outline-offset: 1px;
+}
+
+.button-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  background: linear-gradient(120deg, #c5a06a 0%, #e0bf88 100%);
+  color: #0d1728;
+  font-weight: 700;
+  padding: 0.7rem 1.25rem;
+  transition: opacity 180ms ease, transform 180ms ease;
+}
+
+.button-primary:hover {
+  opacity: 0.92;
+  transform: translateY(-1px);
+}
+
+.button-primary:focus-visible {
+  outline: 2px solid #f7f3eb;
+  outline-offset: 2px;
+}
+
+.button-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  border: 1px solid rgba(247, 243, 235, 0.4);
+  background: rgba(247, 243, 235, 0.06);
+  color: var(--color-brand-paper);
+  font-weight: 600;
+  padding: 0.7rem 1.25rem;
+}
+
+.button-secondary:hover {
+  background: rgba(247, 243, 235, 0.12);
+}
+
+@media (max-width: 768px) {
+  .section-spacing {
+    padding-block: 3rem;
+  }
+}

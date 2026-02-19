@@ -1,0 +1,561 @@
+{
+  "common": {
+    "localeName": {
+      "tr": "Turkish",
+      "en": "English"
+    },
+    "actions": {
+      "book": "Book Now",
+      "checkAvailability": "Check Availability",
+      "contact": "Contact",
+      "whatsapp": "WhatsApp",
+      "learnMore": "Learn More",
+      "viewDetails": "View Details",
+      "requestOffer": "Request Proposal",
+      "send": "Send",
+      "applyFilters": "Apply Filters",
+      "clearFilters": "Reset",
+      "back": "Back",
+      "explore": "Explore",
+      "seeAll": "See All"
+    },
+    "labels": {
+      "area": "sqm",
+      "capacity": "Guests",
+      "from": "From",
+      "until": "Valid Until",
+      "concept": "Concept",
+      "hours": "Opening Hours",
+      "dressCode": "Dress Code",
+      "gallery": "Gallery",
+      "view": "View",
+      "bedType": "Bed Type",
+      "yes": "Yes",
+      "no": "No"
+    }
+  },
+  "navigation": {
+    "home": "Home",
+    "accommodation": "Accommodation",
+    "dining": "Dining",
+    "experiences": "Experiences",
+    "wellness": "Wellness",
+    "offers": "Offers",
+    "events": "Events",
+    "gallery": "Gallery",
+    "contact": "Location & Contact",
+    "tour": "Virtual Tour"
+  },
+  "header": {
+    "aria": {
+      "mainNav": "Main navigation",
+      "language": "Language switcher"
+    },
+    "skipToContent": "Skip to content"
+  },
+  "seo": {
+    "siteTitle": "OTEL_ADI Bodrum",
+    "defaultDescription": "Premium boutique hotel in Bodrum with refined dining and direct booking.",
+    "home": {
+      "title": "Premium Boutique Living in Bodrum",
+      "description": "OTEL_ADI combines coastal calm, fine dining and design-led hospitality in Bodrum." 
+    },
+    "accommodation": {
+      "title": "Accommodation",
+      "description": "Sea-view rooms, suites and private pool villa options."
+    },
+    "dining": {
+      "title": "Dining",
+      "description": "Refined cuisine crafted with local ingredients and signature cocktails."
+    },
+    "experiences": {
+      "title": "Experiences",
+      "description": "From beach rituals to yacht journeys, discover Bodrum your way."
+    },
+    "wellness": {
+      "title": "Wellness",
+      "description": "Spa, hammam and fitness spaces for complete renewal."
+    },
+    "offers": {
+      "title": "Offers",
+      "description": "Early booking, long-stay and honeymoon privileges."
+    },
+    "events": {
+      "title": "Events",
+      "description": "Weddings and meetings with tailored planning and premium venues."
+    },
+    "gallery": {
+      "title": "Gallery",
+      "description": "Selected visuals that reflect the mood of the property."
+    },
+    "contact": {
+      "title": "Location & Contact",
+      "description": "Address, transport, transfer support and direct contact form."
+    },
+    "book": {
+      "title": "Booking",
+      "description": "Fallback page when booking engine URL is not connected yet."
+    },
+    "tour": {
+      "title": "Virtual Tour",
+      "description": "Placeholder page for upcoming 360 virtual tour integration."
+    },
+    "legal": {
+      "kvkk": "KVKK",
+      "privacy": "Privacy Policy",
+      "cookies": "Cookie Policy"
+    }
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Bodrum, Turkiye",
+      "title": "A calm yet character-driven luxury escape on the Aegean",
+      "subtitle": "OTEL_ADI transforms premium comfort into a daily rhythm of sea, dining and wellness.",
+      "primaryCta": "Book Now",
+      "secondaryCta": "Chat on WhatsApp"
+    },
+    "quickCards": {
+      "accommodation": {
+        "title": "Accommodation",
+        "description": "Rooms and suite options"
+      },
+      "dining": {
+        "title": "Dining",
+        "description": "Refined restaurants and bars"
+      },
+      "experiences": {
+        "title": "Experiences",
+        "description": "Sea-driven activities"
+      },
+      "wellness": {
+        "title": "Wellness",
+        "description": "Spa, hammam and fitness"
+      },
+      "offers": {
+        "title": "Offers",
+        "description": "Seasonal privilege packages"
+      }
+    },
+    "conceptBand": {
+      "label": "Concept Clarity",
+      "title": "Boutique luxury concept",
+      "description": "Small-scale, quiet and detail-led hospitality with elevated service standards."
+    },
+    "contactCta": {
+      "title": "Quick Contact",
+      "description": "Reach us instantly for availability and planning support.",
+      "whatsapp": "WhatsApp",
+      "phone": "Phone"
+    },
+    "seasonBanner": {
+      "title": "Season Notice",
+      "description": "The 2026 season is open between {openingDate} and {closingDate}."
+    },
+    "upsells": {
+      "title": "Elevate Your Stay",
+      "subtitle": "Add curated extras for more comfort and flexibility.",
+      "cabana": {
+        "title": "Cabana",
+        "description": "Shaded, service-focused cabana zones by the sea."
+      },
+      "dayPass": {
+        "title": "Day-pass",
+        "description": "Daily beach and pool access package for non-staying guests."
+      },
+      "transfer": {
+        "title": "Transfer",
+        "description": "Private transfer planning from airport or marina."
+      }
+    }
+  },
+  "accommodation": {
+    "title": "Accommodation",
+    "subtitle": "Choose your room by size, view and lifestyle fit.",
+    "filters": {
+      "title": "Filter",
+      "people": "Guest count",
+      "area": "sqm range",
+      "view": "View",
+      "bedType": "Bed type",
+      "poolOrVilla": "Pool / Villa",
+      "all": "All",
+      "views": {
+        "sea": "Sea",
+        "garden": "Garden",
+        "bay": "Bay"
+      },
+      "beds": {
+        "king": "King",
+        "twin": "Twin",
+        "family": "Family"
+      },
+      "poolOrVillaOptions": {
+        "onlyPoolOrVilla": "Only pool/villa"
+      },
+      "emptyState": "No room matches the selected filters."
+    },
+    "card": {
+      "area": "Area",
+      "capacity": "Capacity",
+      "features": "Highlights"
+    },
+    "detail": {
+      "overview": "Room Overview",
+      "specs": "Specifications",
+      "reserveNote": "Rates and conditions are confirmed during booking step."
+    },
+    "rooms": {
+      "azureDeluxe": {
+        "title": "Azure Deluxe Room",
+        "shortDescription": "Sea-view premium room focused on sunset moments.",
+        "description": "Azure Deluxe delivers a calm and refined sea-facing stay designed for two guests."
+      },
+      "gardenSuite": {
+        "title": "Garden Suite",
+        "shortDescription": "Suite with direct garden flow and expanded living area.",
+        "description": "Designed with natural textures, Garden Suite is ideal for guests who enjoy a quieter indoor-outdoor rhythm."
+      },
+      "bayPremium": {
+        "title": "Bay Premium",
+        "shortDescription": "Premium room with bay panorama and marble bathroom.",
+        "description": "With generous ceiling height and wide-angle bay views, Bay Premium brings a bright and elevated coastal setting."
+      },
+      "lagoonPoolSuite": {
+        "title": "Lagoon Pool Suite",
+        "shortDescription": "Private pool suite designed for couples.",
+        "description": "The terrace and water-facing layout provide privacy and direct pool access for a serene start to the day."
+      },
+      "familyResidence": {
+        "title": "Family Residence",
+        "shortDescription": "Two-bedroom layout tailored for families.",
+        "description": "A flexible plan with separate comfort zones for adults and children, suitable for extended stays."
+      },
+      "horizonVilla": {
+        "title": "Horizon Villa",
+        "shortDescription": "Highest privacy level with private pool and sea view.",
+        "description": "Horizon Villa pairs panoramic views with premium service, generous indoor-outdoor living and villa privacy."
+      }
+    }
+  },
+  "dining": {
+    "title": "Dining",
+    "subtitle": "A refined culinary line shaped by Bodrum ingredients.",
+    "detail": {
+      "concept": "Concept",
+      "hours": "Opening Hours",
+      "dressCode": "Dress Code",
+      "gallery": "Gallery"
+    },
+    "venues": {
+      "auraMainRestaurant": {
+        "title": "Aura Main Restaurant",
+        "shortDescription": "Main restaurant with Mediterranean tasting direction.",
+        "description": "Seasonal menus and paced service create a polished all-day dining flow.",
+        "concept": "Local sourcing + modern Mediterranean",
+        "hours": "07:00 - 11:00 / 19:00 - 23:00",
+        "dressCode": "Smart casual"
+      },
+      "shorelineGrill": {
+        "title": "Shoreline Grill",
+        "shortDescription": "Wood-fire grill concept by the water.",
+        "description": "Fresh seafood and fire-led finishes define sunset-focused evening service.",
+        "concept": "Wood fire + seafood",
+        "hours": "12:30 - 17:30 / 19:30 - 00:00",
+        "dressCode": "Resort chic"
+      },
+      "coveLoungeBar": {
+        "title": "Cove Lounge Bar",
+        "shortDescription": "Signature cocktails and social night rhythm.",
+        "description": "A lounge atmosphere shaped by piano sets and curated DJ sessions.",
+        "concept": "Craft cocktails + music programming",
+        "hours": "17:00 - 01:00",
+        "dressCode": "Evening elegant"
+      }
+    }
+  },
+  "experiences": {
+    "title": "Experiences",
+    "subtitle": "Discover Bodrum through sea, movement and curated moments.",
+    "blocks": {
+      "beachPool": {
+        "title": "Beach & Pool",
+        "description": "Private pier, calm pool zones and all-day cabana service."
+      },
+      "waterSports": {
+        "title": "Water Sports",
+        "description": "Paddle, canoe and guided sea activity bundles (placeholder)."
+      },
+      "yacht": {
+        "title": "Boat / Yacht",
+        "description": "Daily bay routes and personalized yacht planning support (placeholder)."
+      },
+      "sports": {
+        "title": "Sport & Activity",
+        "description": "Morning pilates, functional training and coach-supported sessions."
+      }
+    }
+  },
+  "wellness": {
+    "title": "Wellness",
+    "subtitle": "Ritual-driven spaces for body and mind reset.",
+    "blocks": {
+      "spa": {
+        "title": "Spa",
+        "description": "Aromatherapy and signature rituals for full-spectrum renewal."
+      },
+      "hammam": {
+        "title": "Hammam",
+        "description": "Traditional hammam essence with contemporary comfort and hygiene standards."
+      },
+      "fitness": {
+        "title": "Fitness",
+        "description": "Sea-view equipment and optional one-on-one program support."
+      }
+    },
+    "appointmentCta": "Appointment integration will be available soon"
+  },
+  "offers": {
+    "title": "Offers",
+    "subtitle": "Plan your premium stay with seasonal flexibility and privileges.",
+    "validUntil": "Valid Until",
+    "features": {
+      "discount20": "20% early booking discount",
+      "breakfast": "Breakfast included",
+      "freeUpgrade": "Room upgrade upon availability",
+      "discount15": "15% long-stay discount",
+      "airportTransfer": "Roundtrip airport transfer",
+      "laundry": "Weekly laundry package",
+      "roomDecoration": "Honeymoon room decoration",
+      "coupleMassage": "Couple massage session",
+      "privateDinner": "Private dinner for two"
+    },
+    "items": {
+      "earlyBooking": {
+        "title": "Early Booking",
+        "shortDescription": "Value-focused package for early planners.",
+        "description": "Guests booking early for selected periods receive rate advantages and flexible change terms."
+      },
+      "longStay": {
+        "title": "Long Stay",
+        "shortDescription": "Privileges designed for 7-night+ stays.",
+        "description": "A practical benefit stack for extended holidays including transfer, laundry and service extras."
+      },
+      "honeymoon": {
+        "title": "Honeymoon",
+        "shortDescription": "Romance-led premium setup for couples.",
+        "description": "Romantic touches, couple massage and private sunset dining in one tailored package."
+      }
+    },
+    "detail": {
+      "terms": "Exact availability and terms are confirmed during booking."
+    }
+  },
+  "events": {
+    "title": "Events",
+    "subtitle": "Flexible and prestigious spaces for weddings and corporate gatherings.",
+    "weddings": {
+      "title": "Weddings",
+      "description": "End-to-end planning for coastal ceremonies with dedicated event coordination."
+    },
+    "meetings": {
+      "title": "Meetings",
+      "description": "Tech-supported meeting rooms and curated catering for small-to-mid-size teams."
+    },
+    "form": {
+      "title": "Request Proposal",
+      "name": "Full Name",
+      "email": "Email",
+      "phone": "Phone",
+      "date": "Date",
+      "message": "Message",
+      "submit": "Request Offer",
+      "success": "Your request has been received. Our team will contact you shortly.",
+      "errors": {
+        "name": "Please enter your name.",
+        "email": "Enter a valid email address.",
+        "phone": "Phone number is required.",
+        "date": "Please choose a date.",
+        "message": "Message should be at least 10 characters."
+      }
+    }
+  },
+  "gallery": {
+    "title": "Gallery",
+    "subtitle": "Explore spaces, details and atmosphere.",
+    "filters": {
+      "all": "All Categories",
+      "hotel": "Hotel",
+      "rooms": "Rooms",
+      "dining": "Dining",
+      "beach": "Beach",
+      "spa": "Spa"
+    },
+    "videoPlaceholder": {
+      "title": "Video Area",
+      "description": "Promotional video or drone footage will appear here (placeholder)."
+    },
+    "items": {
+      "lobbyArrival": {
+        "title": "Lobby Arrival",
+        "shortDescription": "Premium arrival mood shaped by natural materials."
+      },
+      "deluxeRoomView": {
+        "title": "Deluxe Room View",
+        "shortDescription": "Aegean-facing balcony and soft interior palette."
+      },
+      "chefTable": {
+        "title": "Chef's Table",
+        "shortDescription": "Open-kitchen storytelling and tasting service."
+      },
+      "sunsetPier": {
+        "title": "Sunset Pier",
+        "shortDescription": "Private pier scene with golden-hour lounge rhythm."
+      },
+      "spaRitual": {
+        "title": "Spa Ritual",
+        "shortDescription": "Aromatherapy-led relaxation in silent treatment rooms."
+      },
+      "poolSuite": {
+        "title": "Pool Suite",
+        "shortDescription": "Private terrace layout with direct water connection."
+      },
+      "beachClub": {
+        "title": "Beach Club",
+        "shortDescription": "All-day music flow with signature cocktails."
+      },
+      "wellnessLounge": {
+        "title": "Wellness Lounge",
+        "shortDescription": "Post-treatment recovery space with herbal infusions."
+      }
+    }
+  },
+  "contact": {
+    "title": "Location & Contact",
+    "subtitle": "Get in touch and plan your Bodrum stay with our team.",
+    "addressTitle": "Address",
+    "transportTitle": "Transport",
+    "transferTitle": "Transfer",
+    "transport": {
+      "airport": "Milas-Bodrum Airport: approx. 50 min",
+      "marina": "Yalikavak Marina: approx. 10 min",
+      "cityCenter": "Bodrum Center: approx. 25 min"
+    },
+    "mapPlaceholder": "Map embed area (placeholder)",
+    "quickMessage": "Hello, could I get availability details for OTEL_ADI?",
+    "form": {
+      "title": "General Contact Form",
+      "name": "Full Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "submit": "Send Message",
+      "success": "Your message has been sent. We will get back to you soon.",
+      "errors": {
+        "name": "Name is required.",
+        "email": "Please enter a valid email.",
+        "subject": "Subject should be at least 3 characters.",
+        "message": "Message should be at least 10 characters."
+      }
+    }
+  },
+  "book": {
+    "title": "Booking",
+    "subtitle": "Live booking link is not configured yet.",
+    "unavailableTitle": "Booking engine is not connected",
+    "unavailableDescription": "Once BOOKING_URL is defined, this button will redirect directly to your booking engine.",
+    "contactAlternative": "In the meantime, our team can assist you via WhatsApp or phone."
+  },
+  "tour": {
+    "title": "360 Virtual Tour",
+    "subtitle": "Virtual tour infrastructure will be activated soon.",
+    "placeholder": "This area is prepared for the upcoming 360 room and resort tour component."
+  },
+  "legal": {
+    "kvkk": {
+      "title": "KVKK Information Notice",
+      "intro": "Your personal data is processed by OTEL_ADI as data controller under Law No. 6698.",
+      "sections": {
+        "purposeTitle": "Processing Purpose",
+        "purposeText": "Booking, stay operations, communication and fulfillment of legal obligations.",
+        "legalBasisTitle": "Legal Basis",
+        "legalBasisText": "Explicit legal provisions, contract performance and legitimate interest.",
+        "rightsTitle": "Your Rights",
+        "rightsText": "You may submit requests regarding your rights under Article 11 of KVKK."
+      }
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "intro": "Information shared via this website is protected in line with privacy principles.",
+      "sections": {
+        "collectionTitle": "Collected Data",
+        "collectionText": "Name, email, phone and message content may be collected via contact forms.",
+        "usageTitle": "Usage",
+        "usageText": "Data is used for request management, service quality and communication purposes.",
+        "retentionTitle": "Retention",
+        "retentionText": "Data is retained only for legal duration and purpose-limited periods."
+      }
+    },
+    "cookies": {
+      "title": "Cookie Policy",
+      "intro": "Cookies used on this website are limited to performance and experience enhancement.",
+      "sections": {
+        "typesTitle": "Cookie Types",
+        "typesText": "Necessary cookies, analytics cookies and preference cookies may be used.",
+        "managementTitle": "Management",
+        "managementText": "You may manage or delete cookie preferences via browser settings.",
+        "updateTitle": "Updates",
+        "updateText": "This policy may be updated when needed; latest version is published on this page."
+      }
+    }
+  },
+  "footer": {
+    "legalTitle": "Legal",
+    "kvkk": "KVKK",
+    "privacy": "Privacy",
+    "cookies": "Cookie Policy",
+    "rights": "All rights reserved.",
+    "followUs": "Follow Us"
+  },
+  "features": {
+    "privateTerrace": "Private terrace",
+    "seaView": "Sea view",
+    "rainShower": "Rain shower",
+    "gardenAccess": "Direct garden access",
+    "espressoCorner": "Espresso corner",
+    "daybed": "Daybed",
+    "panoramaBalcony": "Panoramic balcony",
+    "marbleBath": "Marble bathroom",
+    "butlerOnRequest": "Butler on request",
+    "privatePool": "Private pool",
+    "poolDeck": "Pool deck",
+    "smartRoom": "Smart room automation",
+    "twoBedrooms": "Two bedrooms",
+    "kidsNook": "Kids nook",
+    "kitchenette": "Kitchenette",
+    "villaPrivacy": "Villa privacy",
+    "sunsetLounge": "Sunset lounge",
+    "localProduce": "Local produce",
+    "tastingMenu": "Tasting menu",
+    "terrace": "Terrace service",
+    "woodFire": "Wood-fire grill",
+    "freshSeafood": "Fresh seafood",
+    "sunsetTable": "Sunset table",
+    "signatureCocktails": "Signature cocktails",
+    "liveDJ": "Live DJ",
+    "pianoNights": "Piano nights",
+    "architecture": "Architectural detail",
+    "concierge": "Concierge service",
+    "signatureScent": "Signature scent",
+    "linenQuality": "Premium linen",
+    "openKitchen": "Open kitchen",
+    "privateBeach": "Private beach",
+    "cabanaService": "Cabana service",
+    "signatureRitual": "Signature spa ritual",
+    "hammam": "Hammam experience",
+    "relaxArea": "Relax lounge",
+    "morningLight": "Morning natural light",
+    "dayPass": "Day-pass concept",
+    "herbalTea": "Herbal tea service",
+    "silentZone": "Silent zone"
+  }
+}
